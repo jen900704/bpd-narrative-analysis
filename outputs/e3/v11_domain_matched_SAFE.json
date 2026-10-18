@@ -1,0 +1,107 @@
+{
+  "generated": "2026-09-20T20:57:36.258858Z",
+  "seed": 20260920,
+  "mapping": {
+    "Q7": "Q92_1_num",
+    "Q25": "Q92_2_num",
+    "Q28": "Q92_3_num",
+    "Q34": "Q92_4_num",
+    "Q37": "Q92_5_num",
+    "q10": "Q92_6_num",
+    "Q17": "Q92_7_num",
+    "Q20": "Q92_8_num",
+    "Q46": "Q93_1_num",
+    "Q53": "Q93_2_num",
+    "Q50": "Q93_2_num",
+    "Q57": "Q93_3_num",
+    "Q60": "Q93_4_num"
+  },
+  "frame": {
+    "rows": 3813,
+    "persons": 464,
+    "domains": 13,
+    "rows_per_person_mean": 8.22
+  },
+  "within_person_domain_matched": {
+    "beta": -0.0367,
+    "se": 0.0158,
+    "ci_lo": -0.0677,
+    "ci_hi": -0.0058,
+    "p": 0.0205,
+    "note": "person and domain means removed from both sides; outcome in item scale points per SD of the within-person deviation in domain register score; CR1 SEs clustered on participant"
+  },
+  "within_person_placebo_mismatched": {
+    "beta": 0.026,
+    "se": 0.0198,
+    "ci_lo": -0.0129,
+    "ci_hi": 0.0649,
+    "p": 0.1908
+  },
+  "between_person_unadjusted": {
+    "beta": -0.0965,
+    "se": 0.0378,
+    "ci_lo": -0.1705,
+    "ci_hi": -0.0224,
+    "p": 0.011,
+    "n": 464
+  },
+  "register_score_variance": {
+    "within_person_share": 0.7892,
+    "between_person_share": 0.2108
+  },
+  "per_domain_raw_correlation": {
+    "Q17": {
+      "n": 401,
+      "r_raw": -0.101
+    },
+    "Q20": {
+      "n": 276,
+      "r_raw": -0.081
+    },
+    "Q25": {
+      "n": 230,
+      "r_raw": -0.023
+    },
+    "Q28": {
+      "n": 239,
+      "r_raw": -0.147
+    },
+    "Q34": {
+      "n": 237,
+      "r_raw": -0.064
+    },
+    "Q37": {
+      "n": 228,
+      "r_raw": -0.106
+    },
+    "Q46": {
+      "n": 309,
+      "r_raw": -0.141
+    },
+    "Q50": {
+      "n": 301,
+      "r_raw": -0.062
+    },
+    "Q53": {
+      "n": 368,
+      "r_raw": -0.112
+    },
+    "Q57": {
+      "n": 348,
+      "r_raw": -0.188
+    },
+    "Q60": {
+      "n": 309,
+      "r_raw": -0.126
+    },
+    "Q7": {
+      "n": 317,
+      "r_raw": -0.021
+    },
+    "q10": {
+      "n": 250,
+      "r_raw": -0.042
+    }
+  },
+  "status": "OK"
+}

@@ -1,0 +1,3 @@
+measure,n_participants,n_windows,mean_windows_per_participant,k0_unbalanced,MS_between,MS_within,ICC_1_1_single_window,reliability_of_participant_mean_ICC_1_k,attenuation_factor_sqrt_reliability,split_half_r_raw,split_half_spearman_brown_2_halves,split_half_n_participants
+reframing,479,13017,27.18,27.13,0.02954144277225076,0.007747785094717961,0.0939,0.7377,0.8589,0.5271,0.6903,465
+black_and_white,479,13017,27.18,27.13,0.036050684977439275,0.009392545634971902,0.0947,0.7395,0.8599,0.5294,0.6923,465

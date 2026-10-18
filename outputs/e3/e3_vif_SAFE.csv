@@ -1,0 +1,12 @@
+term,vif
+earliest_onset,1.307
+diagnosis_lag,2.061
+symptom_count,1.146
+mean_reframe,2.213
+mean_bw,2.162
+current_age_midpoint,1.99
+gender_collapsed_Male,1.042
+gender_collapsed_Non-binary,1.069
+gender_collapsed_Other_or_small_categories,1.056
+PAST_narrative_word_count_total,7.063
+sbert_n_windows,7.197

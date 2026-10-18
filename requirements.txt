@@ -1,0 +1,15 @@
+# Versions are those used on the CLSP cluster (conda env bpd_attr, Python 3.10.20).
+
+# Statistical pipeline and tests
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+
+# Figures (r3_figure.py, r3_e6.py, e56.py). The published figure was drawn with 3.10.8.
+matplotlib==3.10.8
+
+# Encoder re-scoring only (e2.py, r2_encoder.py, r2c_convention.py). Not needed for the
+# tests or for the regression scripts.
+torch==2.12.0
+sentence-transformers==5.6.0
+transformers==5.11.0

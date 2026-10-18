@@ -1,0 +1,112 @@
+{
+  "generated": "2026-09-20T21:01:33.190506Z",
+  "seed": 20260905,
+  "module_to_item": {
+    "abandonment_worry": "Q92_1_num",
+    "opinions_others": "Q92_2_num",
+    "self_view": "Q92_3_num",
+    "mood_swings": "Q92_4_num",
+    "paranoia": "Q92_5_num",
+    "intense_anger": "Q92_6_num",
+    "emptiness": "Q92_7_num",
+    "suicidal_feelings": "Q92_8_num",
+    "abandonment_behavior": "Q93_1_num",
+    "nssi": "Q93_2_num",
+    "suicide_attempt": "Q93_2_num",
+    "impulsivity": "Q93_3_num",
+    "anger_consequences": "Q93_4_num"
+  },
+  "endorsement_value_counts": {
+    "1.0": 5332
+  },
+  "items_kept": {
+    "mean": 9.21,
+    "median": 10,
+    "min": 2,
+    "max": 11,
+    "n_persons": 540
+  },
+  "outcome_comparison": {
+    "primary_mean": 2.8469,
+    "endorsed_only_mean": 2.9895,
+    "correlation": 0.9578
+  },
+  "primary_for_reference": {
+    "n": 478,
+    "r2": 0.0975,
+    "symptom_count": {
+      "beta": 0.2018,
+      "se": 0.0419,
+      "ci_lo": 0.1193,
+      "ci_hi": 0.2842,
+      "p": 0.0
+    },
+    "mean_reframe": {
+      "beta": -0.2163,
+      "se": 0.0587,
+      "ci_lo": -0.3316,
+      "ci_hi": -0.101,
+      "p": 0.0003
+    },
+    "earliest_onset": {
+      "beta": 0.0228,
+      "se": 0.0423,
+      "ci_lo": -0.0602,
+      "ci_hi": 0.1059,
+      "p": 0.5892
+    },
+    "diagnosis_lag": {
+      "beta": 0.0584,
+      "se": 0.0541,
+      "ci_lo": -0.048,
+      "ci_hi": 0.1648,
+      "p": 0.2817
+    }
+  },
+  "endorsed_only_model": {
+    "n": 478,
+    "r2": 0.1004,
+    "symptom_count": {
+      "beta": 0.2002,
+      "se": 0.0454,
+      "ci_lo": 0.111,
+      "ci_hi": 0.2893,
+      "p": 0.0
+    },
+    "mean_reframe": {
+      "beta": -0.2298,
+      "se": 0.0582,
+      "ci_lo": -0.3442,
+      "ci_hi": -0.1154,
+      "p": 0.0001
+    },
+    "mean_bw": {
+      "beta": 0.0734,
+      "se": 0.0543,
+      "ci_lo": -0.0333,
+      "ci_hi": 0.18,
+      "p": 0.177
+    },
+    "earliest_onset": {
+      "beta": 0.044,
+      "se": 0.0433,
+      "ci_lo": -0.0411,
+      "ci_hi": 0.1291,
+      "p": 0.3105
+    },
+    "diagnosis_lag": {
+      "beta": 0.0757,
+      "se": 0.0564,
+      "ci_lo": -0.0352,
+      "ci_hi": 0.1865,
+      "p": 0.1804
+    },
+    "outcome_sd": 0.8797
+  },
+  "breadth_attenuation": {
+    "beta_primary_outcome": 0.2018,
+    "beta_endorsed_only_outcome": 0.2002,
+    "proportion_retained": 0.9921
+  },
+  "status": "OK"
+}

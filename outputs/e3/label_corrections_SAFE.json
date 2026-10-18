@@ -1,0 +1,34 @@
+{
+  "found": "2026-09-06",
+  "source": "study questionnaire (Qualtrics export), items Q62/Q64, Q66/Q68, Q69/Q71",
+  "frozen_tables_edited": false,
+  "corrections": {
+    "strategy_reframe": {
+      "archived_symptom_domain": "helpful reinterpretation",
+      "corrected_symptom_domain": "anticipatory prevention",
+      "endorsement_item": "Q66",
+      "narrative_item": "Q68",
+      "item_text_abbrev": "noticed ahead of time that something could cause emotional difficulties and taken reasonable steps to avoid/prevent it",
+      "why": "the item asks about foreseeing and preventing, not about reinterpreting"
+    }
+  },
+  "verified_correct": {
+    "strategy_positive_choice": {
+      "symptom_domain": "positive choice",
+      "endorsement_item": "Q62",
+      "narrative_item": "Q64"
+    },
+    "strategy_treatment": {
+      "symptom_domain": "treatment follow-through",
+      "endorsement_item": "Q69",
+      "narrative_item": "Q71"
+    }
+  },
+  "event_rows_affected": 373,
+  "voided_analyses": [
+    "v2_prompt_groups.py (V2 in-domain known groups)",
+    "r9_spec_fixes.py part C (convergent check against self-reported reframing)"
+  ],
+  "primary_model_affected": false,
+  "note": "Downstream code should call label_corrections.apply() rather than reading symptom_domain directly for life-strategy modules."
+}

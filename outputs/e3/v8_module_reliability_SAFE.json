@@ -1,0 +1,46 @@
+{
+  "generated": "2026-09-20T11:27:49.124734Z",
+  "note": "window level reproduces the published estimate; module level is the same computation after averaging within question_id, so the units being aggregated no longer share text",
+  "window_rows": 13017,
+  "mean_reframe": {
+    "window_level": {
+      "icc_single": 0.0939,
+      "icc_1k": 0.7377,
+      "mean_units_per_person": 27.13,
+      "n_persons": 479
+    },
+    "module_level": {
+      "icc_single": 0.079,
+      "icc_1k": 0.473,
+      "mean_modules_per_person": 10.46,
+      "n_persons": 479
+    },
+    "module_split_half": {
+      "r": 0.3013,
+      "spearman_brown": 0.4631,
+      "n_persons": 458
+    },
+    "attenuation_factor_module_icc1k": 0.6877
+  },
+  "mean_bw": {
+    "window_level": {
+      "icc_single": 0.0947,
+      "icc_1k": 0.7395,
+      "mean_units_per_person": 27.13,
+      "n_persons": 479
+    },
+    "module_level": {
+      "icc_single": 0.0689,
+      "icc_1k": 0.4361,
+      "mean_modules_per_person": 10.46,
+      "n_persons": 479
+    },
+    "module_split_half": {
+      "r": 0.3406,
+      "spearman_brown": 0.5082,
+      "n_persons": 458
+    },
+    "attenuation_factor_module_icc1k": 0.6604
+  },
+  "status": "OK"
+}

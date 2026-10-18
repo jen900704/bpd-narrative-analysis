@@ -1,0 +1,117 @@
+{
+  "script": "e3_clsp.py",
+  "run_utc": "2026-09-05T23:15:49+00:00",
+  "seed": 20260905,
+  "python": "3.10.20",
+  "numpy": "2.2.6",
+  "pandas": "2.3.3",
+  "synthetic_mode": false,
+  "inputs": {
+    "phase1_3": {
+      "path": "<BPD_ROOT>/discovery_analysis/intermediate_PRIVATE/phase1_3/phase1_3_analysis_table_PRIVATE.csv",
+      "sha256_16": "b3834ea628d92867",
+      "rows": 540
+    },
+    "windows": {
+      "path": "<BPD_ROOT>/discovery_analysis/intermediate_PRIVATE/window_table_augmented_PRIVATE.csv",
+      "sha256_16": "ada180856bb354a4",
+      "rows": 13017,
+      "columns_read": [
+        "ResponseId",
+        "question_id",
+        "sbert_reframing_similarity",
+        "sbert_blackwhite_similarity",
+        "years_ago"
+      ]
+    }
+  },
+  "flow": {
+    "rows_phase1_3": 540,
+    "rows_windows": 13017,
+    "after_outcome": 540,
+    "after_language": 479,
+    "after_onset_breadth": 479,
+    "after_diagnosis_lag": 478,
+    "after_covariates": 478,
+    "analytic_n": 478
+  },
+  "outcome": "overall_negative_primary",
+  "analytic_n": 478,
+  "model_r2": 0.0974529479888705,
+  "coefficients": {
+    "earliest_onset": {
+      "beta": 0.02284046586968578,
+      "se": 0.0422681067904869,
+      "ci": [
+        -0.060219226293195226,
+        0.10590015803256678
+      ],
+      "p": 0.5891992550165334,
+      "q_bh": 0.5891992550165334
+    },
+    "diagnosis_lag": {
+      "beta": 0.05835645338428781,
+      "se": 0.05414897557873625,
+      "ci": [
+        -0.04804995049840155,
+        0.16476285726697718
+      ],
+      "p": 0.28172437079261725,
+      "q_bh": 0.37563249439015634
+    },
+    "symptom_count": {
+      "beta": 0.20176624437966093,
+      "se": 0.04194976878535024,
+      "ci": [
+        0.11933210795414613,
+        0.28420038080517573
+      ],
+      "p": 2.0439012454514523e-06,
+      "q_bh": 8.175604981805809e-06
+    },
+    "mean_reframe": {
+      "beta": -0.21632213374992418,
+      "se": 0.0586694394525747,
+      "ci": [
+        -0.33161155526232555,
+        -0.10103271223752278
+      ],
+      "p": 0.0002534967778440848,
+      "q_bh": 0.0005069935556881696
+    }
+  },
+  "delta_r2_language": 0.035576446823287866,
+  "equivalence_sesoi_primary": 0.15,
+  "equivalence": [
+    {
+      "term": "earliest_onset",
+      "beta": 0.02284046586968578,
+      "se": 0.0422681067904869,
+      "sesoi": 0.15,
+      "ci90_lo": -0.04682287183063246,
+      "ci90_hi": 0.09250380357000401,
+      "p_tost": 0.001384214798777822,
+      "equivalent": true
+    },
+    {
+      "term": "diagnosis_lag",
+      "beta": 0.05835645338428781,
+      "se": 0.05414897557873625,
+      "sesoi": 0.15,
+      "ci90_lo": -0.030888101394701745,
+      "ci90_hi": 0.14760100816327737,
+      "p_tost": 0.04561587763332873,
+      "equivalent": true
+    }
+  ],
+  "smallest_equivalence_bound": {
+    "diagnosis_lag": 0.15,
+    "earliest_onset": 0.1
+  },
+  "gates": {
+    "H1_breadth": true,
+    "H2_reframe": true,
+    "H3_both_equivalent": true
+  },
+  "max_vif": 7.196567809010955
+}

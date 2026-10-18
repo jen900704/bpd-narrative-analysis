@@ -1,0 +1,668 @@
+{
+  "phase": "e3_paper (E1-E6 for the JMIR Mental Health submission)",
+  "written_utc": "2026-09-07T01:25:30+00:00",
+  "written_by": "r6_manifest.py",
+  "n_scripts": 23,
+  "n_inputs": 4,
+  "n_outputs": 46,
+  "environment_login_node": {
+    "python": "3.13.9",
+    "numpy": "2.3.5",
+    "pandas": "3.0.0",
+    "executable": "<redacted>",
+    "HF_HUB_OFFLINE": null,
+    "TRANSFORMERS_OFFLINE": null
+  },
+  "environment_encoding_jobs": {
+    "conda_env": "<redacted: conda env 'bpd_attr'>",
+    "python": "3.10.20",
+    "torch": "2.12.0+cu130",
+    "sentence_transformers": "5.6.0",
+    "transformers": "5.11.0",
+    "note": "E2 and R2 must use this environment because the archived reframing scores were produced under it. Both ran on CPU: the compute node's NVIDIA driver (12020) is older than this torch build requires, so torch.cuda.is_available() is False even with a GPU allocated."
+  },
+  "compute_policy": "encoder-scale jobs are submitted with sbatch to the gpu partition (see r2.sbatch); nothing at that scale runs on the login node",
+  "scripts": {
+    "e3_clsp.py": {
+      "sha256": "07ec1d633f2cba016ed14406fd5c4f32445c80a182819d2b80d41accddff505d",
+      "sha256_16": "07ec1d633f2cba01",
+      "bytes": 20740,
+      "mtime_utc": "2026-09-05T22:56:44+00:00",
+      "published_in_repo": true
+    },
+    "e4fix.py": {
+      "sha256": "7ddc9a56884b1aabcf79ac0c1a57b34e6cfa48ea888d9f0ac6942dbe39a08f93",
+      "sha256_16": "7ddc9a56884b1aab",
+      "bytes": 4538,
+      "mtime_utc": "2026-09-05T23:32:29+00:00",
+      "published_in_repo": true
+    },
+    "fix2.py": {
+      "sha256": "2553b3c1adac3ebb88cb4faabe52df49556b425af15e1c5836588e991d8b8eec",
+      "sha256_16": "2553b3c1adac3ebb",
+      "bytes": 3424,
+      "mtime_utc": "2026-09-05T23:34:13+00:00",
+      "published_in_repo": true
+    },
+    "e56.py": {
+      "sha256": "009acb10e99aaaf9bd217bbdcbb7d18dc2a7bee065c4313c9499eb7fe77ad65d",
+      "sha256_16": "009acb10e99aaaf9",
+      "bytes": 7151,
+      "mtime_utc": "2026-09-06T00:18:08+00:00",
+      "published_in_repo": true
+    },
+    "e2.py": {
+      "sha256": "813c11f6c3244147b1b9ef9f0dbe64438071de106be76ca32c260f845ea3385f",
+      "sha256_16": "813c11f6c3244147",
+      "bytes": 7072,
+      "mtime_utc": "2026-09-06T01:15:07+00:00",
+      "published_in_repo": true
+    },
+    "gen.py": {
+      "sha256": "67b9781f6de7f4b5574f8a3f1aac1867b22e902b9d7abe9b9bc69b7fa4329c76",
+      "sha256_16": "67b9781f6de7f4b5",
+      "bytes": 3195,
+      "mtime_utc": "2026-09-05T22:59:14+00:00",
+      "published_in_repo": true
+    },
+    "paperlib.py": {
+      "sha256": "72766d38fce576ae0a0ad57a5cec690ef3fc62a790015b5304c76ceba11d7ed3",
+      "sha256_16": "72766d38fce576ae",
+      "bytes": 6085,
+      "mtime_utc": "2026-09-06T03:42:49+00:00",
+      "published_in_repo": true
+    },
+    "r1_years_ago.py": {
+      "sha256": "b1fa4e5b29e201d033a8f267d83954f29a3e9772650881f71db1ec02b70b0572",
+      "sha256_16": "b1fa4e5b29e201d0",
+      "bytes": 5238,
+      "mtime_utc": "2026-09-06T03:18:55+00:00",
+      "published_in_repo": true
+    },
+    "r2_encoder.py": {
+      "sha256": "2cf40ff6632fa968545aa8a8073fa18ab58d938fe9536857b81b91b53d7a4597",
+      "sha256_16": "2cf40ff6632fa968",
+      "bytes": 12711,
+      "mtime_utc": "2026-09-06T03:31:07+00:00",
+      "published_in_repo": true
+    },
+    "r3_e6.py": {
+      "sha256": "436dbbc1d59a41aa1060b133b7ea26d36430bd7eebb61499dbb5cda87074bfa6",
+      "sha256_16": "436dbbc1d59a41aa",
+      "bytes": 10762,
+      "mtime_utc": "2026-09-06T03:24:47+00:00",
+      "published_in_repo": true
+    },
+    "r4_q109.py": {
+      "sha256": "f579556819ea916f073b390048e2d5f7e79ac707e2a326807006e080ba359d37",
+      "sha256_16": "f579556819ea916f",
+      "bytes": 4064,
+      "mtime_utc": "2026-09-06T03:23:34+00:00",
+      "published_in_repo": true
+    },
+    "r6_manifest.py": {
+      "sha256": "681285c24577e9d042b6553339d1bcbc6fbd3e836164cfb2f1395f90db29c9c4",
+      "sha256_16": "681285c24577e9d0",
+      "bytes": 8858,
+      "mtime_utc": "2026-09-07T01:25:28+00:00",
+      "published_in_repo": false
+    },
+    "r8_measure_reliability.py": {
+      "sha256": "90f792ffe7b9dbceec499b0a90e635c56d6d2b277b035af29270a5789b7d0a35",
+      "sha256_16": "90f792ffe7b9dbce",
+      "bytes": 6752,
+      "mtime_utc": "2026-09-06T03:52:05+00:00",
+      "published_in_repo": true
+    },
+    "r2c_convention.py": {
+      "sha256": "8ac0341f7a2c9b414338605a9357bc34ae0a0dd2b9a6ca74a7341eb3fe4e6e6f",
+      "sha256_16": "8ac0341f7a2c9b41",
+      "bytes": 4412,
+      "mtime_utc": "2026-09-06T03:59:50+00:00",
+      "published_in_repo": true
+    },
+    "label_corrections.py": {
+      "sha256": "24be0375cc60d3bfc8d943bbb7e3deacd6f638e7242f1f7497be2cfe87e9581b",
+      "sha256_16": "24be0375cc60d3bf",
+      "bytes": 4309,
+      "mtime_utc": "2026-09-07T01:25:17+00:00",
+      "published_in_repo": true
+    },
+    "v13_score.py": {
+      "sha256": "45f98d1e076ec270605e9780acd3861e07e64ad94655c1bb146917d84d66de3a",
+      "sha256_16": "45f98d1e076ec270",
+      "bytes": 14938,
+      "mtime_utc": "2026-09-06T19:51:55+00:00",
+      "published_in_repo": false
+    },
+    "v2_prompt_groups.py": {
+      "sha256": "92625ecbecbcda77d6ff12cfb4e4f385465462b0e69bcd8412bde2ed0857f1a4",
+      "sha256_16": "92625ecbecbcda77",
+      "bytes": 7114,
+      "mtime_utc": "2026-09-06T19:55:25+00:00",
+      "published_in_repo": false
+    },
+    "v4_liwc.py": {
+      "sha256": "516126f67bd27eb23de0201d62c0573a372d3d3a6191831eb9e7144fd870ed10",
+      "sha256_16": "516126f67bd27eb2",
+      "bytes": 3814,
+      "mtime_utc": "2026-09-06T13:35:49+00:00",
+      "published_in_repo": false
+    },
+    "v3_pairs_draft.py": {
+      "sha256": "25b8e783a9ce0225d86f610e6e72e0046b7185b2929ceee0a28fb3e4dadc99d0",
+      "sha256_16": "25b8e783a9ce0225",
+      "bytes": 23020,
+      "mtime_utc": "2026-09-06T13:25:21+00:00",
+      "published_in_repo": false
+    },
+    "v3_pairs_b.py": {
+      "sha256": "03318443dcb66a29625fa4cee14ec53526c8467e33ffdf4ed0b44d3880011c21",
+      "sha256_16": "03318443dcb66a29",
+      "bytes": 13535,
+      "mtime_utc": "2026-09-06T19:51:49+00:00",
+      "published_in_repo": false
+    },
+    "e1_prepare_coding.py": {
+      "sha256": "fcfe6df087ac7d15e7023d6f6bfabf43dbe7b4a2ee4af830467757e0de737c13",
+      "sha256_16": "fcfe6df087ac7d15",
+      "bytes": 10947,
+      "mtime_utc": "2026-09-06T09:41:04+00:00",
+      "published_in_repo": false
+    },
+    "e1_coding_tui.py": {
+      "sha256": "4035bdfe3391ecff9722dddf9aa2e3bf3ec696ac9137b9a5ae0a129694d273c4",
+      "sha256_16": "4035bdfe3391ecff",
+      "bytes": 11866,
+      "mtime_utc": "2026-09-06T09:44:38+00:00",
+      "published_in_repo": false
+    },
+    "e1_score.py": {
+      "sha256": "f8eebd720af6a2c0308949d5937b8d37cdb9a801770334350e7e5486a1c834bc",
+      "sha256_16": "f8eebd720af6a2c0",
+      "bytes": 10379,
+      "mtime_utc": "2026-09-06T09:44:44+00:00",
+      "published_in_repo": false
+    }
+  },
+  "inputs_read": {
+    "phase1_3/phase1_3_analysis_table_PRIVATE.csv": {
+      "sha256_16": "b3834ea628d92867",
+      "rows": 540,
+      "bytes": 138707,
+      "mtime_utc": "2026-07-30T05:18:46+00:00"
+    },
+    "window_table_augmented_PRIVATE.csv": {
+      "sha256_16": "ada180856bb354a4",
+      "rows": 13017,
+      "bytes": 5221988,
+      "mtime_utc": "2026-07-30T03:54:49+00:00"
+    },
+    "person_table_PRIVATE.csv": {
+      "sha256_16": "05fa2d783bde5a24",
+      "rows": 540,
+      "bytes": 891193,
+      "mtime_utc": "2026-07-30T03:54:48+00:00"
+    },
+    "event_table_PRIVATE.csv": {
+      "sha256_16": "213cee62250a2dac",
+      "rows": 7944,
+      "bytes": 1415344,
+      "mtime_utc": "2026-07-30T03:54:48+00:00"
+    }
+  },
+  "outputs": {
+    "covariate_item_labels_SAFE.json": {
+      "sha256_16": "75010316cec6fe11",
+      "bytes": 651,
+      "mtime_utc": "2026-09-06T00:19:51+00:00",
+      "produced_by": "e56.py",
+      "published_in_repo": false
+    },
+    "e2_encoder_robustness_SAFE.csv": {
+      "sha256_16": "f983cb272f9ca7db",
+      "bytes": 186,
+      "mtime_utc": "2026-09-06T02:17:00+00:00",
+      "produced_by": "e2.py",
+      "rows": 2,
+      "published_in_repo": true
+    },
+    "e2_report_SAFE.json": {
+      "sha256_16": "7337239bf1981c49",
+      "bytes": 370,
+      "mtime_utc": "2026-09-06T02:17:00+00:00",
+      "produced_by": "e2.py",
+      "published_in_repo": true
+    },
+    "e2b_leave_one_prototype_out_SAFE.csv": {
+      "sha256_16": "0ed92248e667d880",
+      "bytes": 558,
+      "mtime_utc": "2026-09-06T02:17:00+00:00",
+      "produced_by": "e2.py",
+      "rows": 8,
+      "published_in_repo": true
+    },
+    "e3_blocks_SAFE.csv": {
+      "sha256_16": "e91496201d7db763",
+      "bytes": 393,
+      "mtime_utc": "2026-09-05T23:15:49+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 3,
+      "published_in_repo": true
+    },
+    "e3_equivalence_SAFE.csv": {
+      "sha256_16": "eca85bf1a734aa56",
+      "bytes": 193,
+      "mtime_utc": "2026-09-05T23:15:49+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 2,
+      "published_in_repo": true
+    },
+    "e3_equivalence_curve_SAFE.csv": {
+      "sha256_16": "85c24ca94e412726",
+      "bytes": 888,
+      "mtime_utc": "2026-09-05T23:15:49+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 12,
+      "published_in_repo": true
+    },
+    "e3_left_censoring_report_SAFE.json": {
+      "sha256_16": "d67f2f70e2aa1d54",
+      "bytes": 78,
+      "mtime_utc": "2026-09-05T23:34:15+00:00",
+      "produced_by": "e3_clsp.py",
+      "published_in_repo": true
+    },
+    "e3_left_censoring_sensitivity_SAFE.csv": {
+      "sha256_16": "4424df0d17497c29",
+      "bytes": 895,
+      "mtime_utc": "2026-09-05T23:34:15+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 12,
+      "published_in_repo": true
+    },
+    "e3_mi_coefficients_SAFE.csv": {
+      "sha256_16": "c82a58e7c1cc5269",
+      "bytes": 1056,
+      "mtime_utc": "2026-09-05T23:15:49+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 12,
+      "published_in_repo": true
+    },
+    "e3_primary_coefficients_SAFE.csv": {
+      "sha256_16": "8cbe4f890dc3cfcc",
+      "bytes": 1037,
+      "mtime_utc": "2026-09-05T23:15:49+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 12,
+      "published_in_repo": true
+    },
+    "e3_reliability_SAFE.csv": {
+      "sha256_16": "8cbdb33e011526a1",
+      "bytes": 255,
+      "mtime_utc": "2026-09-05T23:34:15+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 4,
+      "published_in_repo": true
+    },
+    "e3_sensitivity_SAFE.csv": {
+      "sha256_16": "cbec8dca6bd44f59",
+      "bytes": 2355,
+      "mtime_utc": "2026-09-05T23:15:49+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 24,
+      "published_in_repo": true
+    },
+    "e3_sensitivity_drop_nwindows_SAFE.csv": {
+      "sha256_16": "b31b6d62a4561317",
+      "bytes": 300,
+      "mtime_utc": "2026-09-05T23:32:31+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 4,
+      "published_in_repo": true
+    },
+    "e3_summary_SAFE.json": {
+      "sha256_16": "25f079c51c553012",
+      "bytes": 3010,
+      "mtime_utc": "2026-09-05T23:15:49+00:00",
+      "produced_by": "e3_clsp.py",
+      "published_in_repo": true
+    },
+    "e3_vif_SAFE.csv": {
+      "sha256_16": "fce7cc842f349270",
+      "bytes": 300,
+      "mtime_utc": "2026-09-05T23:15:49+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 11,
+      "published_in_repo": true
+    },
+    "e3_vif_drop_nwindows_SAFE.csv": {
+      "sha256_16": "640109622450aa5d",
+      "bytes": 279,
+      "mtime_utc": "2026-09-05T23:32:31+00:00",
+      "produced_by": "e3_clsp.py",
+      "rows": 10,
+      "published_in_repo": true
+    },
+    "e4_derivation_report_SAFE.json": {
+      "sha256_16": "9743eae6cbb8623a",
+      "bytes": 526,
+      "mtime_utc": "2026-09-05T23:32:31+00:00",
+      "produced_by": "e4fix.py",
+      "published_in_repo": false
+    },
+    "e4_time_since_event_SAFE.csv": {
+      "sha256_16": "0908b7d11b6b485e",
+      "bytes": 364,
+      "mtime_utc": "2026-09-05T23:32:31+00:00",
+      "produced_by": "e4fix.py",
+      "rows": 4,
+      "published_in_repo": true
+    },
+    "e5_moderation_SAFE.csv": {
+      "sha256_16": "dd023ac7c04be403",
+      "bytes": 223,
+      "mtime_utc": "2026-09-06T00:19:51+00:00",
+      "produced_by": "e56.py",
+      "rows": 2,
+      "published_in_repo": true
+    },
+    "e5_simple_slopes_SAFE.csv": {
+      "sha256_16": "fcbc76660e25be04",
+      "bytes": 174,
+      "mtime_utc": "2026-09-06T00:19:51+00:00",
+      "produced_by": "e56.py",
+      "rows": 3,
+      "published_in_repo": true
+    },
+    "e6_age_heaping_SAFE.csv": {
+      "sha256_16": "9ffa5a15cfb28f7d",
+      "bytes": 158,
+      "mtime_utc": "2026-09-06T00:20:26+00:00",
+      "produced_by": "e56.py",
+      "rows": 9,
+      "published_in_repo": false
+    },
+    "e6_domain_onset_SAFE.csv": {
+      "sha256_16": "124389da0a59aced",
+      "bytes": 997,
+      "mtime_utc": "2026-09-06T00:20:26+00:00",
+      "produced_by": "e56.py",
+      "rows": 15,
+      "published_in_repo": false
+    },
+    "label_corrections_SAFE.json": {
+      "sha256_16": "db29d1726b0e1700",
+      "bytes": 1316,
+      "mtime_utc": "2026-09-07T01:25:27+00:00",
+      "produced_by": "unknown",
+      "published_in_repo": true
+    },
+    "privacy_audit_SAFE.csv": {
+      "sha256_16": "610575b0924324a9",
+      "bytes": 1798,
+      "mtime_utc": "2026-09-07T01:25:29+00:00",
+      "produced_by": "r6_manifest.py",
+      "rows": 46,
+      "published_in_repo": false
+    },
+    "r1_years_ago_v2_report_SAFE.json": {
+      "sha256_16": "54f563e91e1717a8",
+      "bytes": 1428,
+      "mtime_utc": "2026-09-06T03:19:26+00:00",
+      "produced_by": "r1_years_ago.py",
+      "published_in_repo": false
+    },
+    "r2_prototype_check_SAFE.json": {
+      "sha256_16": "c4cdfead53db5429",
+      "bytes": 109,
+      "mtime_utc": "2026-09-06T03:41:36+00:00",
+      "produced_by": "r2_encoder.py",
+      "published_in_repo": true
+    },
+    "r2_report_SAFE.json": {
+      "sha256_16": "44999ac881869857",
+      "bytes": 2310,
+      "mtime_utc": "2026-09-06T03:57:11+00:00",
+      "produced_by": "r2_encoder.py",
+      "published_in_repo": true
+    },
+    "r2a_identity_check_SAFE.csv": {
+      "sha256_16": "ddf5b70178264cbf",
+      "bytes": 715,
+      "mtime_utc": "2026-09-06T03:57:11+00:00",
+      "produced_by": "r2_encoder.py",
+      "rows": 1,
+      "published_in_repo": true
+    },
+    "r2b_bootstrap_describe_SAFE.csv": {
+      "sha256_16": "b1c69243de4f9c90",
+      "bytes": 539,
+      "mtime_utc": "2026-09-06T03:57:11+00:00",
+      "produced_by": "r2_encoder.py",
+      "rows": 8,
+      "published_in_repo": true
+    },
+    "r2b_paired_bootstrap_SAFE.csv": {
+      "sha256_16": "4b2b489a1d45ef52",
+      "bytes": 726,
+      "mtime_utc": "2026-09-06T03:57:11+00:00",
+      "produced_by": "r2_encoder.py",
+      "rows": 1,
+      "published_in_repo": true
+    },
+    "r2c_convention_SAFE.json": {
+      "sha256_16": "7c35c7cb9f0dfc71",
+      "bytes": 1174,
+      "mtime_utc": "2026-09-06T04:01:05+00:00",
+      "produced_by": "unknown",
+      "published_in_repo": true
+    },
+    "r3_e6_age_heaping_SAFE.csv": {
+      "sha256_16": "e0ce2c58abc96de8",
+      "bytes": 275,
+      "mtime_utc": "2026-09-06T03:27:03+00:00",
+      "produced_by": "r3_e6.py",
+      "rows": 2,
+      "published_in_repo": true
+    },
+    "r3_e6_domain_onset_SAFE.csv": {
+      "sha256_16": "9287f1c777b264e2",
+      "bytes": 1179,
+      "mtime_utc": "2026-09-06T03:27:03+00:00",
+      "produced_by": "r3_e6.py",
+      "rows": 15,
+      "published_in_repo": true
+    },
+    "r3_e6_domain_onset_primary14_SAFE.png": {
+      "sha256_16": "6de66e8ca43d678a",
+      "bytes": 233364,
+      "mtime_utc": "2026-09-06T04:09:05+00:00",
+      "produced_by": "r3_e6.py",
+      "published_in_repo": true
+    },
+    "r3_e6_onset_peaks_SAFE.csv": {
+      "sha256_16": "8af807097df4bd2d",
+      "bytes": 448,
+      "mtime_utc": "2026-09-06T03:27:03+00:00",
+      "produced_by": "r3_e6.py",
+      "rows": 10,
+      "published_in_repo": true
+    },
+    "r3_e6_report_SAFE.json": {
+      "sha256_16": "a1ba55f8aa708042",
+      "bytes": 1289,
+      "mtime_utc": "2026-09-06T03:27:03+00:00",
+      "produced_by": "r3_e6.py",
+      "published_in_repo": true
+    },
+    "r4_q109_interitem_SAFE.csv": {
+      "sha256_16": "c2b0358dc989620e",
+      "bytes": 115,
+      "mtime_utc": "2026-09-06T03:23:47+00:00",
+      "produced_by": "r4_q109.py",
+      "rows": 3,
+      "published_in_repo": true
+    },
+    "r4_q109_items_SAFE.csv": {
+      "sha256_16": "b40bfd7282f0c35f",
+      "bytes": 771,
+      "mtime_utc": "2026-09-06T03:23:47+00:00",
+      "produced_by": "r4_q109.py",
+      "rows": 3,
+      "published_in_repo": true
+    },
+    "r4_q109_report_SAFE.json": {
+      "sha256_16": "b9f3db1f2724a653",
+      "bytes": 636,
+      "mtime_utc": "2026-09-06T03:23:47+00:00",
+      "produced_by": "r4_q109.py",
+      "published_in_repo": true
+    },
+    "r8_measure_reliability_SAFE.csv": {
+      "sha256_16": "92aaa2dbe10d4e40",
+      "bytes": 504,
+      "mtime_utc": "2026-09-06T03:52:23+00:00",
+      "produced_by": "r8_measure_reliability.py",
+      "rows": 2,
+      "published_in_repo": true
+    },
+    "r8_measure_reliability_SAFE.json": {
+      "sha256_16": "2482f6c20c9f7ac0",
+      "bytes": 1903,
+      "mtime_utc": "2026-09-06T03:52:23+00:00",
+      "produced_by": "r8_measure_reliability.py",
+      "published_in_repo": true
+    },
+    "r9_report_SAFE.json": {
+      "sha256_16": "23b7c4b083337557",
+      "bytes": 1763,
+      "mtime_utc": "2026-09-06T19:55:25+00:00",
+      "produced_by": "unknown",
+      "published_in_repo": true
+    },
+    "r9a_coping_prompt_sensitivity_SAFE.csv": {
+      "sha256_16": "b9a08eaa65c0c07e",
+      "bytes": 1528,
+      "mtime_utc": "2026-09-06T09:27:18+00:00",
+      "produced_by": "unknown",
+      "rows": 16,
+      "published_in_repo": true
+    },
+    "r9b_life_strategy_covariate_SAFE.csv": {
+      "sha256_16": "825507ba6baf415e",
+      "bytes": 1581,
+      "mtime_utc": "2026-09-06T09:27:18+00:00",
+      "produced_by": "unknown",
+      "rows": 16,
+      "published_in_repo": true
+    },
+    "run_manifest_SAFE.json": {
+      "sha256_16": "06fd3a4e5f50aadc",
+      "bytes": 14774,
+      "mtime_utc": "2026-09-06T09:31:31+00:00",
+      "produced_by": "r6_manifest.py",
+      "published_in_repo": true
+    }
+  },
+  "frozen_outputs_untouched": true,
+  "privacy_audit": {
+    "file": "privacy_audit_SAFE.csv",
+    "files_scanned": 46,
+    "passed": 46,
+    "needs_review": 0,
+    "checks": [
+      "identifier token R_[A-Za-z0-9]{8,}",
+      "free-text column names",
+      "row count above 100 (participant-scale output)",
+      "person/event count cells below 5",
+      "PRIVATE-named files in the output directory"
+    ],
+    "cell_count_columns_checked": [
+      "count",
+      "n",
+      "n_compared",
+      "n_complete",
+      "n_events",
+      "n_participants",
+      "n_per_imputation",
+      "n_windows"
+    ],
+    "columns_exempt_from_the_cell_rule": [
+      "df",
+      "df1",
+      "df2",
+      "k",
+      "k_items",
+      "k_remaining"
+    ],
+    "stray_private_files": [],
+    "note_public_repo": "privacy_audit_SAFE.csv is an internal record and is not published; see PRIVACY.md"
+  },
+  "tests": {
+    "suite": "discovery_analysis/tests",
+    "new_files": [
+      "test_e3_paper_lib.py",
+      "test_e3_paper_core.py"
+    ],
+    "note": "counts are recorded by the test run, not asserted here"
+  },
+  "scripts_published_but_not_in_manifest": [
+    "attr.py",
+    "complete_responder.py",
+    "paths.py",
+    "r3_figure.py",
+    "r9_spec_fixes.py",
+    "v11_domain_matched.py",
+    "v12_endorsed_only.py",
+    "v5_valence_control.py",
+    "v7_review_response.py",
+    "v8_module_reliability.py",
+    "v9_review_analyses.py"
+  ],
+  "outputs_added_after_manifest_published": {
+    "attrition_comparison_SAFE.csv": {
+      "sha256_16_published_bytes": "b691b9b069411562",
+      "produced_by": "attr.py"
+    },
+    "complete_responder_sensitivity_SAFE.csv": {
+      "sha256_16_published_bytes": "a928783fb5c2e8e5",
+      "produced_by": "complete_responder.py"
+    },
+    "complete_responder_sensitivity_SAFE.json": {
+      "sha256_16_published_bytes": "1a3eaa1ae3f1d9aa",
+      "produced_by": "complete_responder.py"
+    },
+    "v11_domain_matched_SAFE.json": {
+      "sha256_16_published_bytes": "6383a696d8af755d",
+      "produced_by": "v11_domain_matched.py"
+    },
+    "v12_endorsed_only_outcome_SAFE.json": {
+      "sha256_16_published_bytes": "bff98cf48536884a",
+      "produced_by": "v12_endorsed_only.py"
+    },
+    "v5_valence_control_SAFE.json": {
+      "sha256_16_published_bytes": "11d2e518fefa2f1f",
+      "produced_by": "v5_valence_control.py"
+    },
+    "v7_review_response_SAFE.json": {
+      "sha256_16_published_bytes": "0fea094044e6f192",
+      "produced_by": "v7_review_response.py"
+    },
+    "v8_module_reliability_SAFE.json": {
+      "sha256_16_published_bytes": "59b0d72bf46b07f3",
+      "produced_by": "v8_module_reliability.py"
+    }
+  },
+  "public_repo_sanitisation": {
+    "done_utc_date": "2026-10-18",
+    "paths": "private absolute paths redacted",
+    "script_hashes": "sha256 values under 'scripts' are of the original files as run. The published copies differ only in reading their input locations from e3_paper/paths.py (environment variables) instead of hard-coded private paths, so their hashes differ.",
+    "output_hashes": "sha256 values under 'outputs' are of the files as written by the pipeline; files listed in 'sanitised_outputs' were edited as described and their published bytes differ.",
+    "sanitised_outputs": {
+      "e3_summary_SAFE.json": "input paths: private project root replaced by <BPD_ROOT>",
+      "v5_valence_control_SAFE.json": "person_table path: private root replaced by <BPD_ROOT>; removed liwc_columns_available (column-name inventory, not a result)",
+      "v7_review_response_SAFE.json": "removed introspect (column-name inventory of the private tables, not a result)"
+    }
+  }
+}

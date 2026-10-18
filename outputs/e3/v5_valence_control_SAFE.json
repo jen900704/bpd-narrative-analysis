@@ -1,0 +1,323 @@
+{
+  "generated": "2026-09-20T06:28:55.432691Z",
+  "seed": 20260905,
+  "outcome": "overall_negative_primary",
+  "person_table": "<BPD_ROOT>/discovery_analysis/intermediate_PRIVATE/person_table_PRIVATE.csv",
+  "convention": "predictors standardised; outcome left on its original 1-5 scale, matching e3_clsp.run(). Betas are outcome units per predictor SD and are directly comparable to archived values. SESOI 0.15 is on this same scale.",
+  "specs_available": [
+    "tone_pos_neg",
+    "emo_pos_neg",
+    "tone_composite"
+  ],
+  "person_table_rows": 540,
+  "primary_predictors": [
+    "current_age_midpoint",
+    "gender_collapsed",
+    "PAST_narrative_word_count_total",
+    "sbert_n_windows",
+    "earliest_onset",
+    "diagnosis_lag",
+    "symptom_count",
+    "mean_reframe",
+    "mean_bw"
+  ],
+  "archived_replication": {
+    "n": 478,
+    "r2": 0.0975,
+    "outcome_sd": 0.8421,
+    "mean_reframe": {
+      "beta": -0.2163,
+      "se": 0.0587,
+      "ci_lo": -0.3316,
+      "ci_hi": -0.101,
+      "p": 0.0003
+    },
+    "mean_bw": {
+      "beta": 0.0905,
+      "se": 0.0566,
+      "ci_lo": -0.0207,
+      "ci_hi": 0.2017,
+      "p": 0.1105
+    },
+    "symptom_count": {
+      "beta": 0.2018,
+      "se": 0.0419,
+      "ci_lo": 0.1193,
+      "ci_hi": 0.2842,
+      "p": 0.0
+    },
+    "earliest_onset": {
+      "beta": 0.0228,
+      "se": 0.0423,
+      "ci_lo": -0.0602,
+      "ci_hi": 0.1059,
+      "p": 0.5892
+    },
+    "diagnosis_lag": {
+      "beta": 0.0584,
+      "se": 0.0541,
+      "ci_lo": -0.048,
+      "ci_hi": 0.1648,
+      "p": 0.2817
+    }
+  },
+  "fully_standardised_for_reference": {
+    "mean_reframe": {
+      "beta": -0.2569,
+      "se": 0.0697,
+      "ci_lo": -0.3938,
+      "ci_hi": -0.12,
+      "p": 0.0003
+    },
+    "mean_bw": {
+      "beta": 0.1075,
+      "se": 0.0672,
+      "ci_lo": -0.0246,
+      "ci_hi": 0.2395,
+      "p": 0.1105
+    }
+  },
+  "valence_vs_language_scores": {
+    "liwc_Tone": {
+      "n": 463,
+      "r_mean_reframe": -0.1493,
+      "r_mean_bw": -0.116
+    },
+    "liwc_emo_neg": {
+      "n": 479,
+      "r_mean_reframe": 0.1143,
+      "r_mean_bw": 0.2384
+    },
+    "liwc_emo_pos": {
+      "n": 479,
+      "r_mean_reframe": 0.1237,
+      "r_mean_bw": 0.1624
+    },
+    "liwc_tone_neg": {
+      "n": 479,
+      "r_mean_reframe": 0.2778,
+      "r_mean_bw": 0.3133
+    },
+    "liwc_tone_pos": {
+      "n": 479,
+      "r_mean_reframe": -0.0078,
+      "r_mean_bw": 0.1316
+    }
+  },
+  "specs": {
+    "tone_pos_neg": {
+      "valence_terms": [
+        "liwc_tone_pos",
+        "liwc_tone_neg"
+      ],
+      "with_valence": {
+        "n": 478,
+        "r2": 0.0988,
+        "mean_reframe": {
+          "beta": -0.2209,
+          "se": 0.0609,
+          "ci_lo": -0.3406,
+          "ci_hi": -0.1013,
+          "p": 0.0003
+        },
+        "mean_bw": {
+          "beta": 0.0835,
+          "se": 0.0603,
+          "ci_lo": -0.035,
+          "ci_hi": 0.202,
+          "p": 0.1669
+        },
+        "symptom_count": {
+          "beta": 0.1974,
+          "se": 0.0425,
+          "ci_lo": 0.114,
+          "ci_hi": 0.2809,
+          "p": 0.0
+        }
+      },
+      "without_valence_same_n": {
+        "n": 478,
+        "r2": 0.0975,
+        "mean_reframe": {
+          "beta": -0.2163,
+          "se": 0.0587,
+          "ci_lo": -0.3316,
+          "ci_hi": -0.101,
+          "p": 0.0003
+        },
+        "mean_bw": {
+          "beta": 0.0905,
+          "se": 0.0566,
+          "ci_lo": -0.0207,
+          "ci_hi": 0.2017,
+          "p": 0.1105
+        }
+      },
+      "valence_coefficients": {
+        "liwc_tone_pos": {
+          "beta": -0.0013,
+          "se": 0.039,
+          "ci_lo": -0.0778,
+          "ci_hi": 0.0753,
+          "p": 0.9744
+        },
+        "liwc_tone_neg": {
+          "beta": 0.0333,
+          "se": 0.0373,
+          "ci_lo": -0.0399,
+          "ci_hi": 0.1065,
+          "p": 0.3719
+        }
+      },
+      "attenuation": {
+        "beta_without": -0.2163,
+        "beta_with": -0.2209,
+        "change": -0.0046,
+        "proportion_retained": 1.0213,
+        "delta_r2_from_valence": 0.0014
+      },
+      "prespecified_verdict": "not a valence artefact"
+    },
+    "emo_pos_neg": {
+      "valence_terms": [
+        "liwc_emo_pos",
+        "liwc_emo_neg"
+      ],
+      "with_valence": {
+        "n": 478,
+        "r2": 0.1026,
+        "mean_reframe": {
+          "beta": -0.2211,
+          "se": 0.0585,
+          "ci_lo": -0.336,
+          "ci_hi": -0.1061,
+          "p": 0.0002
+        },
+        "mean_bw": {
+          "beta": 0.0942,
+          "se": 0.0584,
+          "ci_lo": -0.0206,
+          "ci_hi": 0.209,
+          "p": 0.1077
+        },
+        "symptom_count": {
+          "beta": 0.205,
+          "se": 0.0417,
+          "ci_lo": 0.123,
+          "ci_hi": 0.287,
+          "p": 0.0
+        }
+      },
+      "without_valence_same_n": {
+        "n": 478,
+        "r2": 0.0975,
+        "mean_reframe": {
+          "beta": -0.2163,
+          "se": 0.0587,
+          "ci_lo": -0.3316,
+          "ci_hi": -0.101,
+          "p": 0.0003
+        },
+        "mean_bw": {
+          "beta": 0.0905,
+          "se": 0.0566,
+          "ci_lo": -0.0207,
+          "ci_hi": 0.2017,
+          "p": 0.1105
+        }
+      },
+      "valence_coefficients": {
+        "liwc_emo_pos": {
+          "beta": 0.0565,
+          "se": 0.0363,
+          "ci_lo": -0.0148,
+          "ci_hi": 0.1279,
+          "p": 0.1201
+        },
+        "liwc_emo_neg": {
+          "beta": -0.0367,
+          "se": 0.035,
+          "ci_lo": -0.1054,
+          "ci_hi": 0.032,
+          "p": 0.2942
+        }
+      },
+      "attenuation": {
+        "beta_without": -0.2163,
+        "beta_with": -0.2211,
+        "change": -0.0048,
+        "proportion_retained": 1.0222,
+        "delta_r2_from_valence": 0.0051
+      },
+      "prespecified_verdict": "not a valence artefact"
+    },
+    "tone_composite": {
+      "valence_terms": [
+        "liwc_Tone"
+      ],
+      "with_valence": {
+        "n": 462,
+        "r2": 0.0967,
+        "mean_reframe": {
+          "beta": -0.2195,
+          "se": 0.0611,
+          "ci_lo": -0.3397,
+          "ci_hi": -0.0993,
+          "p": 0.0004
+        },
+        "mean_bw": {
+          "beta": 0.0854,
+          "se": 0.0573,
+          "ci_lo": -0.0273,
+          "ci_hi": 0.1981,
+          "p": 0.1371
+        },
+        "symptom_count": {
+          "beta": 0.193,
+          "se": 0.0443,
+          "ci_lo": 0.106,
+          "ci_hi": 0.2801,
+          "p": 0.0
+        }
+      },
+      "without_valence_same_n": {
+        "n": 462,
+        "r2": 0.0952,
+        "mean_reframe": {
+          "beta": -0.2155,
+          "se": 0.0606,
+          "ci_lo": -0.3346,
+          "ci_hi": -0.0963,
+          "p": 0.0004
+        },
+        "mean_bw": {
+          "beta": 0.0864,
+          "se": 0.0579,
+          "ci_lo": -0.0275,
+          "ci_hi": 0.2003,
+          "p": 0.1368
+        }
+      },
+      "valence_coefficients": {
+        "liwc_Tone": {
+          "beta": -0.0329,
+          "se": 0.0397,
+          "ci_lo": -0.111,
+          "ci_hi": 0.0452,
+          "p": 0.4083
+        }
+      },
+      "attenuation": {
+        "beta_without": -0.2155,
+        "beta_with": -0.2195,
+        "change": -0.004,
+        "proportion_retained": 1.0186,
+        "delta_r2_from_valence": 0.0014
+      },
+      "prespecified_verdict": "not a valence artefact"
+    }
+  },
+  "headline_spec": "tone_pos_neg",
+  "headline_verdict": "not a valence artefact",
+  "status": "OK"
+}

@@ -1,0 +1,15 @@
+{
+  "k_items": 3,
+  "n_complete": 456,
+  "alpha": 0.598,
+  "omega_total": 0.794,
+  "mean_interitem_r": 0.343,
+  "min_interitem_r": 0.239,
+  "max_interitem_r": 0.533,
+  "best_alpha_if_deleted": {
+    "item": "Q109_3_num",
+    "alpha": 0.695
+  },
+  "reporting_status": "exploratory / secondary outcome, reported with its own reliability; not interchangeable with the Q92+Q93 primary composite (alpha .885, omega .905)",
+  "note": "With only 3 items, alpha is bounded low by scale length as well as by inter-item correlation; leave-one-item-out on a 3-item scale leaves a 2-item scale, so 'alpha if deleted' should be read against that."
+}

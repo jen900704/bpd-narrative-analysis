@@ -1,0 +1,53 @@
+{
+  "A_coping_prompts": {
+    "frozen_set": [
+      "Q64",
+      "Q68",
+      "Q53"
+    ],
+    "life_strategy_questions": [
+      "Q64",
+      "Q68",
+      "Q71"
+    ],
+    "union": [
+      "Q53",
+      "Q64",
+      "Q68",
+      "Q71"
+    ],
+    "windows_per_question": {
+      "Q53": 885,
+      "Q64": 550,
+      "Q68": 475,
+      "Q71": 617
+    },
+    "defect": "the frozen set drops Q53, a PAST_NARRATIVE, and retains Q71, a LIFE_STRATEGY_NARRATIVE",
+    "window_counts": {
+      "windows_all": 13017,
+      "windows_frozen": 11107,
+      "windows_corrected": 11375,
+      "windows_union": 10490
+    }
+  },
+  "C_convergent": {
+    "endorsed_helpful_reinterpretation": {
+      "n_endorsed": 335,
+      "n_not": 144,
+      "mean_reframe_endorsed": 0.23865,
+      "mean_reframe_not": 0.23357,
+      "cohens_d": 0.109,
+      "d_ci95": [
+        -0.0914,
+        0.3102
+      ],
+      "bootstrap_p_two_sided": 0.287
+    },
+    "discriminant_black_and_white_score": {
+      "cohens_d": -0.0332,
+      "note": "shown so the reframing d can be read against a contrast measure"
+    },
+    "interpretation": "Convergent evidence only, and weak by construction: endorsing 'helpful reinterpretation' as a life strategy is a different act from using reframing language in a past-experience narrative. A null result here would be ambiguous, not disconfirming. This does not substitute for E1.",
+    "CORRECTION_6_Sep_2026": "The endorsement used here is module strategy_reframe, which the pipeline labels 'helpful reinterpretation'. The questionnaire item (Q66) asks about anticipatory prevention, not reinterpretation. This comparison is therefore NOT a convergent-validity check for reframing and is void for that purpose; the numbers are retained only as a record."
+  }
+}

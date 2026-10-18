@@ -1,0 +1,26 @@
+{
+  "resolution": {
+    "flagged_events": 6681,
+    "flagged_domains": 15,
+    "proxy_domain": "suicidal feelings",
+    "proxy_events": 426,
+    "primary_events": 6255,
+    "primary_domains": 14,
+    "primary_participants": 539,
+    "matches_frozen_phase_1_5A": true,
+    "arithmetic": "6681 flagged - 426 proxy = 6255 primary"
+  },
+  "heaping_notes": {
+    "subset_relationship": "Multiples of ten are a SUBSET of multiples of five. The two percentages must not be presented as separate facts; report multiples of 5 with 'of which multiples of 10' nested inside.",
+    "non_round_peaks": "The concentrations at 12 and 13 are not round numbers and are not age heaping; they more plausibly reflect adolescent concentration or a recall anchor.",
+    "floor_at_5": "Reports at 5 are confounded with the left-censoring floor ('5 or younger') and should not be read as heaping either; see the pct_left_censored_at_this_age column.",
+    "wording": "Reported onset ages showed round-number concentration consistent with possible age heaping: 29.4% of events fell on multiples of five, including 10.7% that were multiples of ten."
+  },
+  "seed": 20260906,
+  "n_bootstrap": 2000,
+  "supersedes": [
+    "e6_domain_onset_SAFE.csv",
+    "e6_age_heaping_SAFE.csv",
+    "e6_domain_onset_SAFE.png"
+  ]
+}

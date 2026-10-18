@@ -1,0 +1,414 @@
+{
+  "generated": "2026-09-20T11:25:04.564808Z",
+  "seed": 20260905,
+  "outcome": "overall_negative_primary",
+  "convention": "predictors standardised; outcome on its original 1-5 scale",
+  "blocks": {
+    "covariates": [
+      "current_age_midpoint",
+      "gender_collapsed",
+      "PAST_narrative_word_count_total",
+      "sbert_n_windows"
+    ],
+    "life_course": [
+      "earliest_onset",
+      "diagnosis_lag",
+      "symptom_count"
+    ],
+    "language": [
+      "mean_reframe",
+      "mean_bw"
+    ]
+  },
+  "primary_full_coefficients": {
+    "n": 478,
+    "r2": 0.0975,
+    "terms": {
+      "const": {
+        "beta": 2.8267,
+        "se": 0.0396,
+        "ci_lo": 2.7488,
+        "ci_hi": 2.9045,
+        "p": 0.0
+      },
+      "current_age_midpoint": {
+        "beta": -0.0114,
+        "se": 0.0561,
+        "ci_lo": -0.1216,
+        "ci_hi": 0.0988,
+        "p": 0.8388
+      },
+      "gender_collapsed_Male": {
+        "beta": 0.0265,
+        "se": 0.1979,
+        "ci_lo": -0.3624,
+        "ci_hi": 0.4154,
+        "p": 0.8935
+      },
+      "gender_collapsed_Non-binary": {
+        "beta": -0.0002,
+        "se": 0.1665,
+        "ci_lo": -0.3273,
+        "ci_hi": 0.3269,
+        "p": 0.999
+      },
+      "gender_collapsed_Other_or_small_categories": {
+        "beta": 0.4111,
+        "se": 0.2307,
+        "ci_lo": -0.0423,
+        "ci_hi": 0.8644,
+        "p": 0.0755
+      },
+      "PAST_narrative_word_count_total": {
+        "beta": 0.1048,
+        "se": 0.0852,
+        "ci_lo": -0.0627,
+        "ci_hi": 0.2723,
+        "p": 0.2197
+      },
+      "sbert_n_windows": {
+        "beta": -0.1504,
+        "se": 0.0899,
+        "ci_lo": -0.327,
+        "ci_hi": 0.0262,
+        "p": 0.0949
+      },
+      "earliest_onset": {
+        "beta": 0.0228,
+        "se": 0.0423,
+        "ci_lo": -0.0602,
+        "ci_hi": 0.1059,
+        "p": 0.5892
+      },
+      "diagnosis_lag": {
+        "beta": 0.0584,
+        "se": 0.0541,
+        "ci_lo": -0.048,
+        "ci_hi": 0.1648,
+        "p": 0.2817
+      },
+      "symptom_count": {
+        "beta": 0.2018,
+        "se": 0.0419,
+        "ci_lo": 0.1193,
+        "ci_hi": 0.2842,
+        "p": 0.0
+      },
+      "mean_reframe": {
+        "beta": -0.2163,
+        "se": 0.0587,
+        "ci_lo": -0.3316,
+        "ci_hi": -0.101,
+        "p": 0.0003
+      },
+      "mean_bw": {
+        "beta": 0.0905,
+        "se": 0.0566,
+        "ci_lo": -0.0207,
+        "ci_hi": 0.2017,
+        "p": 0.1105
+      }
+    }
+  },
+  "single_score_models": {
+    "reflective_only": {
+      "n": 478,
+      "r2": 0.0921,
+      "mean_reframe": {
+        "beta": -0.1499,
+        "se": 0.0356,
+        "ci_lo": -0.2199,
+        "ci_hi": -0.0799,
+        "p": 0.0
+      }
+    },
+    "absolutist_only": {
+      "n": 478,
+      "r2": 0.0676,
+      "mean_bw": {
+        "beta": -0.0647,
+        "se": 0.0342,
+        "ci_lo": -0.1318,
+        "ci_hi": 0.0025,
+        "p": 0.0591
+      }
+    },
+    "both_primary": {
+      "mean_reframe": {
+        "beta": -0.2163,
+        "se": 0.0587,
+        "ci_lo": -0.3316,
+        "ci_hi": -0.101,
+        "p": 0.0003
+      },
+      "mean_bw": {
+        "beta": 0.0905,
+        "se": 0.0566,
+        "ci_lo": -0.0207,
+        "ci_hi": 0.2017,
+        "p": 0.1105
+      }
+    }
+  },
+  "zero_order_correlations": {
+    "overall_negative_primary": {
+      "overall_negative_primary": 1.0,
+      "current_age_midpoint": -0.036,
+      "PAST_narrative_word_count_total": -0.01,
+      "sbert_n_windows": -0.018,
+      "earliest_onset": -0.029,
+      "diagnosis_lag": 0.034,
+      "symptom_count": 0.221,
+      "mean_reframe": -0.176,
+      "mean_bw": -0.081
+    },
+    "current_age_midpoint": {
+      "overall_negative_primary": -0.036,
+      "current_age_midpoint": 1.0,
+      "PAST_narrative_word_count_total": -0.006,
+      "sbert_n_windows": 0.09,
+      "earliest_onset": 0.091,
+      "diagnosis_lag": 0.605,
+      "symptom_count": -0.209,
+      "mean_reframe": -0.007,
+      "mean_bw": 0.009
+    },
+    "PAST_narrative_word_count_total": {
+      "overall_negative_primary": -0.01,
+      "current_age_midpoint": -0.006,
+      "PAST_narrative_word_count_total": 1.0,
+      "sbert_n_windows": 0.919,
+      "earliest_onset": -0.086,
+      "diagnosis_lag": 0.069,
+      "symptom_count": 0.186,
+      "mean_reframe": 0.141,
+      "mean_bw": 0.058
+    },
+    "sbert_n_windows": {
+      "overall_negative_primary": -0.018,
+      "current_age_midpoint": 0.09,
+      "PAST_narrative_word_count_total": 0.919,
+      "sbert_n_windows": 1.0,
+      "earliest_onset": -0.114,
+      "diagnosis_lag": 0.155,
+      "symptom_count": 0.217,
+      "mean_reframe": 0.114,
+      "mean_bw": 0.06
+    },
+    "earliest_onset": {
+      "overall_negative_primary": -0.029,
+      "current_age_midpoint": 0.091,
+      "PAST_narrative_word_count_total": -0.086,
+      "sbert_n_windows": -0.114,
+      "earliest_onset": 1.0,
+      "diagnosis_lag": -0.301,
+      "symptom_count": -0.183,
+      "mean_reframe": -0.017,
+      "mean_bw": -0.006
+    },
+    "diagnosis_lag": {
+      "overall_negative_primary": 0.034,
+      "current_age_midpoint": 0.605,
+      "PAST_narrative_word_count_total": 0.069,
+      "sbert_n_windows": 0.155,
+      "earliest_onset": -0.301,
+      "diagnosis_lag": 1.0,
+      "symptom_count": -0.027,
+      "mean_reframe": -0.063,
+      "mean_bw": -0.068
+    },
+    "symptom_count": {
+      "overall_negative_primary": 0.221,
+      "current_age_midpoint": -0.209,
+      "PAST_narrative_word_count_total": 0.186,
+      "sbert_n_windows": 0.217,
+      "earliest_onset": -0.183,
+      "diagnosis_lag": -0.027,
+      "symptom_count": 1.0,
+      "mean_reframe": 0.02,
+      "mean_bw": 0.015
+    },
+    "mean_reframe": {
+      "overall_negative_primary": -0.176,
+      "current_age_midpoint": -0.007,
+      "PAST_narrative_word_count_total": 0.141,
+      "sbert_n_windows": 0.114,
+      "earliest_onset": -0.017,
+      "diagnosis_lag": -0.063,
+      "symptom_count": 0.02,
+      "mean_reframe": 1.0,
+      "mean_bw": 0.728
+    },
+    "mean_bw": {
+      "overall_negative_primary": -0.081,
+      "current_age_midpoint": 0.009,
+      "PAST_narrative_word_count_total": 0.058,
+      "sbert_n_windows": 0.06,
+      "earliest_onset": -0.006,
+      "diagnosis_lag": -0.068,
+      "symptom_count": 0.015,
+      "mean_reframe": 0.728,
+      "mean_bw": 1.0
+    }
+  },
+  "distancing": {
+    "columns": [
+      "liwc_focuspast",
+      "liwc_focuspresent",
+      "liwc_i"
+    ],
+    "n_with_liwc": 479,
+    "correlations": {
+      "liwc_focuspast": {
+        "r_mean_reframe": 0.1536,
+        "r_mean_bw": 0.1699,
+        "r_outcome": -0.0641
+      },
+      "liwc_focuspresent": {
+        "r_mean_reframe": -0.2521,
+        "r_mean_bw": -0.281,
+        "r_outcome": 0.1259
+      },
+      "liwc_i": {
+        "r_mean_reframe": 0.1865,
+        "r_mean_bw": 0.2058,
+        "r_outcome": 0.1203
+      }
+    },
+    "composite_correlations": {
+      "r_mean_reframe": 0.1312,
+      "r_mean_bw": 0.1467,
+      "r_outcome": -0.1857
+    },
+    "models": {
+      "baseline_same_n": {
+        "n": 478,
+        "r2": 0.0975,
+        "mean_reframe": {
+          "beta": -0.2163,
+          "se": 0.0587,
+          "ci_lo": -0.3316,
+          "ci_hi": -0.101,
+          "p": 0.0003
+        }
+      },
+      "plus_three_liwc": {
+        "n": 478,
+        "r2": 0.1347,
+        "mean_reframe": {
+          "beta": -0.2209,
+          "se": 0.0583,
+          "ci_lo": -0.3355,
+          "ci_hi": -0.1064,
+          "p": 0.0002
+        },
+        "mean_bw": {
+          "beta": 0.0934,
+          "se": 0.0555,
+          "ci_lo": -0.0157,
+          "ci_hi": 0.2024,
+          "p": 0.0933
+        },
+        "liwc_terms": {
+          "liwc_focuspast": {
+            "beta": -0.0623,
+            "se": 0.0435,
+            "ci_lo": -0.1478,
+            "ci_hi": 0.0231,
+            "p": 0.1525
+          },
+          "liwc_focuspresent": {
+            "beta": 0.078,
+            "se": 0.0579,
+            "ci_lo": -0.0358,
+            "ci_hi": 0.1918,
+            "p": 0.1784
+          },
+          "liwc_i": {
+            "beta": 0.1521,
+            "se": 0.0386,
+            "ci_lo": 0.0762,
+            "ci_hi": 0.228,
+            "p": 0.0001
+          }
+        }
+      },
+      "plus_composite": {
+        "n": 478,
+        "r2": 0.1268,
+        "mean_reframe": {
+          "beta": -0.2106,
+          "se": 0.0571,
+          "ci_lo": -0.3229,
+          "ci_hi": -0.0984,
+          "p": 0.0003
+        },
+        "ling_distance": {
+          "beta": -0.1485,
+          "se": 0.0424,
+          "ci_lo": -0.2319,
+          "ci_hi": -0.0652,
+          "p": 0.0005
+        }
+      },
+      "composite_instead_of_reflective": {
+        "n": 478,
+        "r2": 0.0986,
+        "ling_distance": {
+          "beta": -0.1524,
+          "se": 0.0398,
+          "ci_lo": -0.2306,
+          "ci_hi": -0.0741,
+          "p": 0.0001
+        }
+      }
+    },
+    "verdict_inputs": {
+      "beta_without_liwc": -0.2163,
+      "beta_with_three_liwc": -0.2209,
+      "proportion_retained": 1.0213,
+      "delta_r2": 0.0373
+    }
+  },
+  "reparameterised_life_course": {
+    "note": "current_age = earliest_onset + diagnosis_lag + years_since_diagnosis, so with age and onset held fixed the diagnosis-lag coefficient is the negative of the years-since-diagnosis coefficient",
+    "n": 478,
+    "r2": 0.0975,
+    "years_since_diagnosis": {
+      "beta": -0.047,
+      "se": 0.0436,
+      "ci_lo": -0.1326,
+      "ci_hi": 0.0387,
+      "p": 0.2817
+    },
+    "earliest_onset": {
+      "beta": -0.0017,
+      "se": 0.0363,
+      "ci_lo": -0.0731,
+      "ci_hi": 0.0697,
+      "p": 0.963
+    },
+    "mean_reframe": {
+      "beta": -0.2163,
+      "se": 0.0587,
+      "ci_lo": -0.3316,
+      "ci_hi": -0.101,
+      "p": 0.0003
+    },
+    "primary_diagnosis_lag_for_comparison": {
+      "beta": 0.0584,
+      "se": 0.0541,
+      "ci_lo": -0.048,
+      "ci_hi": 0.1648,
+      "p": 0.2817
+    },
+    "descriptives": {
+      "age_at_diagnosis_mean": 29.36,
+      "age_at_diagnosis_sd": 10.75,
+      "years_since_diagnosis_mean": 10.83,
+      "years_since_diagnosis_sd": 9.08,
+      "n_negative_years_since_diagnosis": 36
+    }
+  },
+  "status": "OK"
+}

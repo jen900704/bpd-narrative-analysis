@@ -1,0 +1,4 @@
+block,predictors,r2_small,r2_big,delta_r2,df1,df2,F,p
+covariates,"current_age_midpoint, gender_collapsed, PAST_narrative_word_count_total, sbert_n_windows",0.0,0.005541,0.005541,6,471,0.437372,0.853872
+life_course,"earliest_onset, diagnosis_lag, symptom_count",0.005541,0.061877,0.056336,3,468,9.368039,5e-06
+language,"mean_reframe, mean_bw",0.061877,0.097453,0.035576,2,466,9.184355,0.000122

@@ -1,0 +1,13 @@
+{
+  "n_windows": 13017,
+  "device": "cpu",
+  "reproduce_r_mean_over_prototypes": 1.0,
+  "reproduce_r_max_over_prototypes": 0.8924,
+  "convention_used": "mean_over_prototypes",
+  "convention_r": 1.0,
+  "minilm_mpnet_window_corr": 0.6942,
+  "minilm_mpnet_participant_corr": 0.8129,
+  "loo_beta_min": -0.2277,
+  "loo_beta_max": -0.2018,
+  "loo_all_negative_and_p05": true
+}

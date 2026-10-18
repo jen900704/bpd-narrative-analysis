@@ -1,0 +1,5 @@
+scale,k,n,alpha,omega_total,mean,sd
+Q92 thoughts/feelings,8,540,0.857,0.889,3.115,0.91
+Q93 negative behaviours,4,540,0.683,0.808,2.311,0.942
+Q109 positive behaviours,3,456,0.598,0.794,3.419,0.898
+Q92+Q93 composite (primary),12,540,0.885,0.905,2.847,0.861

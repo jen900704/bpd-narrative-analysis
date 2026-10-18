@@ -1,0 +1,24 @@
+{
+  "reframing": {
+    "set": "reframing",
+    "n_prototypes": 8,
+    "centroid_norm": 0.6905098557472229,
+    "implied_scale_factor_1_over_norm": 1.4482052525055822,
+    "mean_pairwise_cosine": 0.4020616114139557,
+    "min_pairwise_cosine": 0.26869329810142517,
+    "max_pairwise_cosine": 0.5686971545219421,
+    "observed_calibration_slope_from_R2a": 1.4482053131538417,
+    "difference": 6.064825952556419e-08,
+    "matches_centroid_convention": true
+  },
+  "black_and_white": {
+    "set": "black_and_white",
+    "n_prototypes": 8,
+    "centroid_norm": 0.6123703718185425,
+    "implied_scale_factor_1_over_norm": 1.6329986655466733,
+    "mean_pairwise_cosine": 0.2857113480567932,
+    "min_pairwise_cosine": 0.0430162139236927,
+    "max_pairwise_cosine": 0.5260252356529236
+  },
+  "conclusion": "The archived score is cosine similarity to the NORMALISED CENTROID of the prototype set. It equals the mean of the per-prototype cosines divided by the centroid norm, so the two are proportional: correlation 1 by construction, and identical standardised regression coefficients. Methods should describe the centroid convention, not 'mean cosine over the eight prototypes'."
+}

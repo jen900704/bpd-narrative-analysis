@@ -1,0 +1,11 @@
+age,n,pct_of_primary,multiple_of_5,multiple_of_10,is_round_number,pct_left_censored_at_this_age
+15.0,540,8.63,True,False,True,0.0
+16.0,505,8.07,False,False,False,0.0
+13.0,494,7.9,False,False,False,0.0
+14.0,471,7.53,False,False,False,0.0
+12.0,459,7.34,False,False,False,0.0
+5.0,441,7.05,True,False,True,100.0
+10.0,341,5.45,True,True,True,0.0
+18.0,299,4.78,False,False,False,0.0
+17.0,274,4.38,False,False,False,0.0
+8.0,218,3.49,False,False,False,0.0

@@ -1,0 +1,7 @@
+variable,n_analytic,n_excluded,mean_analytic,mean_excluded,sd_analytic,sd_excluded,cohens_d
+30-day symptom impact,478,62,2.836,2.933,0.842,1.001,0.113
+symptom breadth,478,62,11.824,11.032,2.317,2.817,-0.333
+earliest onset age,478,61,9.469,9.574,4.783,4.039,0.022
+diagnosis lag,478,60,20.13,17.55,11.379,10.094,-0.229
+current age (band midpoint),478,61,40.556,37.303,11.541,10.062,-0.286
+past-narrative word count,478,62,387.46,8.952,396.473,70.485,-1.012

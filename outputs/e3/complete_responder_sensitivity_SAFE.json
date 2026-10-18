@@ -1,0 +1,18 @@
+{
+  "n_total": 540,
+  "items_answered_distribution": {
+    "12": 540
+  },
+  "n_with_all_12": 540,
+  "n_with_fewer_than_12": 0,
+  "n_with_zero_items": 0,
+  "archived_vs_recomputed_max_abs_diff_among_complete": 4.440892098500626e-16,
+  "archived_vs_recomputed_r_all": 1.0,
+  "max_shift_from_primary": {
+    "diagnosis_lag": 0.0,
+    "earliest_onset": 0.0,
+    "mean_reframe": 0.0,
+    "symptom_count": 0.0
+  },
+  "conclusion": "the two supported coefficients are stable across item-completeness thresholds"
+}

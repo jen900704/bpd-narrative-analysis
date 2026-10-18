@@ -1,0 +1,16 @@
+set,symptom_domain,n_events,n_participants,median_onset,ci_lo,ci_hi,q25,q75,pct_left_censored
+primary_14,chronic shame/self-loathing,461,461,12.0,12.0,12.5,8.0,15.0,13.4
+primary_14,chronic emptiness,525,525,13.0,12.0,13.0,9.0,16.0,10.7
+primary_14,rapid extreme changes,533,533,13.0,13.0,14.0,10.0,16.0,10.3
+primary_14,abandonment worry,472,472,14.0,13.0,15.0,9.0,19.0,12.7
+primary_14,extreme changes in self-view,433,433,14.0,13.0,14.0,10.0,17.0,8.3
+primary_14,nonsuicidal self-injury,467,467,14.0,14.0,15.0,12.0,18.0,1.7
+primary_14,severe mood swings,427,427,14.0,13.0,14.0,10.0,17.5,9.4
+primary_14,shifts in opinions of others,413,413,14.0,14.0,15.0,11.0,18.0,6.5
+primary_14,intense hard-to-control anger,381,381,15.0,14.0,15.0,10.0,20.0,6.6
+primary_14,abandonment-prevention behavior,422,422,16.0,16.0,17.0,14.0,20.0,4.7
+primary_14,impulsive behavior,516,516,16.0,15.0,16.0,13.0,18.0,2.5
+primary_14,anger with consequences,443,443,17.0,16.0,17.0,13.0,21.0,4.1
+primary_14,paranoia/loss of reality,360,360,17.0,16.0,18.0,13.0,24.0,4.7
+primary_14,suicide attempt,402,402,17.0,16.0,18.0,14.0,24.0,1.0
+proxy_suicidal_feelings,suicidal feelings,426,426,14.0,13.0,14.0,12.0,17.0,2.3

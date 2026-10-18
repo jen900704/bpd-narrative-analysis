@@ -1,0 +1,13 @@
+subset,n,term,beta,se,ci_lo,ci_hi,p
+all (primary),478,earliest_onset,0.0228,0.0423,-0.0602,0.1059,0.5892
+all (primary),478,diagnosis_lag,0.0584,0.0541,-0.048,0.1648,0.2817
+all (primary),478,symptom_count,0.2018,0.0419,0.1193,0.2842,0.0
+all (primary),478,mean_reframe,-0.2163,0.0587,-0.3316,-0.101,0.0003
+excluding left-censored,347,earliest_onset,0.0932,0.0524,-0.0098,0.1963,0.0761
+excluding left-censored,347,diagnosis_lag,0.0975,0.0631,-0.0267,0.2217,0.1235
+excluding left-censored,347,symptom_count,0.2408,0.0455,0.1512,0.3304,0.0
+excluding left-censored,347,mean_reframe,-0.1187,0.0691,-0.2546,0.0172,0.0867
+left-censored only,131,earliest_onset,-0.0,0.0,-0.0,-0.0,0.0337
+left-censored only,131,diagnosis_lag,-0.1361,0.1031,-0.3402,0.0681,0.1896
+left-censored only,131,symptom_count,0.0411,0.0872,-0.1315,0.2138,0.6378
+left-censored only,131,mean_reframe,-0.4928,0.1128,-0.7161,-0.2695,0.0

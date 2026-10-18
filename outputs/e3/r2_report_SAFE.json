@@ -1,0 +1,67 @@
+{
+  "join_audit": {
+    "rows_in_window_table": 13017,
+    "window_text_nonnull": 13017,
+    "stored_reframing_nonnull": 13017,
+    "text_nonnull_and_score_nonnull": 13017,
+    "text_nonnull_but_score_null": 0,
+    "text_null_but_score_nonnull": 0,
+    "rows_compared": 13017,
+    "alignment": "positional within the single source CSV after dropping null window_text; no key-based merge is involved, so row order is the join"
+  },
+  "r2a_identity": {
+    "convention": "mean_over_prototypes",
+    "n_compared": 13017,
+    "pearson_r": 0.9999999999995773,
+    "pearson_r_8dp": 1.0,
+    "mean_recomputed": 0.1670084297657013,
+    "mean_archived": 0.24186247684044554,
+    "sd_recomputed": 0.06384187191724777,
+    "sd_archived": 0.0924561305474519,
+    "mean_signed_difference": -0.07485403608269459,
+    "MAE": 0.07498757119350276,
+    "RMSE": 0.08013638320542589,
+    "max_abs_difference": 0.17548984316772465,
+    "p99_abs_difference": 0.13815467495651243,
+    "n_exact_to_1e_12": 0,
+    "n_exact_to_1e_6": 0,
+    "calibration_slope": 1.4482053131538417,
+    "calibration_intercept": -3.440646793348639e-08,
+    "calibration_residual_sd": 8.500549993215369e-08,
+    "calibration_max_abs_residual": 3.7586263224032024e-07,
+    "verdict": "affine rescaling of the archived score (slope 1.4482, intercept -0.0000), not identity"
+  },
+  "r2b_paired_bootstrap": {
+    "n_participants": 478,
+    "n_bootstrap_completed": 2000,
+    "seed": 20260906,
+    "resampling_unit": "participant (paired: both encoders refit on the same resample)",
+    "beta_minilm_observed": -0.2163,
+    "beta_minilm_hc3_se": 0.0587,
+    "beta_mpnet_observed": -0.2647,
+    "beta_mpnet_hc3_se": 0.0463,
+    "observed_difference_mpnet_minus_minilm": -0.0483,
+    "bootstrap_mean_difference": -0.0449,
+    "bootstrap_se_difference": 0.0462,
+    "difference_ci95": [
+      -0.1393,
+      0.0421
+    ],
+    "difference_ci99": [
+      -0.1681,
+      0.0703
+    ],
+    "bootstrap_p_two_sided": 0.331,
+    "pct_bootstrap_draws_mpnet_more_negative": 83.5,
+    "corr_of_bootstrap_betas": 0.612,
+    "beta_minilm_ci95": [
+      -0.3297,
+      -0.1123
+    ],
+    "beta_mpnet_ci95": [
+      -0.3543,
+      -0.1823
+    ],
+    "conclusion": "the two encoder estimates are NOT distinguishable; report the MPNet estimate as descriptively larger only"
+  }
+}

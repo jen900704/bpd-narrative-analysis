@@ -1,0 +1,43 @@
+{
+  "reframing": {
+    "n_participants": 479,
+    "n_windows": 13017,
+    "mean_windows_per_participant": 27.18,
+    "k0_unbalanced": 27.13,
+    "MS_between": 0.02954144277225076,
+    "MS_within": 0.007747785094717961,
+    "ICC_1_1_single_window": 0.0939,
+    "reliability_of_participant_mean_ICC_1_k": 0.7377,
+    "attenuation_factor_sqrt_reliability": 0.8589,
+    "split_half_r_raw": 0.5271,
+    "split_half_spearman_brown_2_halves": 0.6903,
+    "split_half_n_participants": 465,
+    "reliability_ci95": [
+      0.6895,
+      0.7723
+    ]
+  },
+  "black_and_white": {
+    "n_participants": 479,
+    "n_windows": 13017,
+    "mean_windows_per_participant": 27.18,
+    "k0_unbalanced": 27.13,
+    "MS_between": 0.036050684977439275,
+    "MS_within": 0.009392545634971902,
+    "ICC_1_1_single_window": 0.0947,
+    "reliability_of_participant_mean_ICC_1_k": 0.7395,
+    "attenuation_factor_sqrt_reliability": 0.8599,
+    "split_half_r_raw": 0.5294,
+    "split_half_spearman_brown_2_halves": 0.6923,
+    "split_half_n_participants": 465
+  },
+  "interpretation": {
+    "observed_reframing_beta_E3": -0.216,
+    "attenuation_factor_used": 0.8589,
+    "upper_reference_disattenuated_beta": -0.2515,
+    "reported_estimate": "the OBSERVED coefficient. The disattenuated value is an upper reference under classical measurement error and is not the reported result.",
+    "what_this_establishes": "how much of the between-participant variance in the cosine score is stable across a participant's windows",
+    "what_this_does_not_establish": "that the stable component measures reframing as a human coder would recognise it; that is E1",
+    "wording": "The participant-level reframing score is a mean of noisy per-window cosines with an estimated reliability of 0.74, so the reported coefficient is attenuated and should be read as a lower bound on the association with the stable component of the measure."
+  }
+}

@@ -1,0 +1,25 @@
+analysis,term,beta,se,ci_lo,ci_hi,p
+primary (complete case),earliest_onset,0.02284,0.042268,-0.060219,0.1059,0.589199
+primary (complete case),diagnosis_lag,0.058356,0.054149,-0.04805,0.164763,0.281724
+primary (complete case),symptom_count,0.201766,0.04195,0.119332,0.2842,2e-06
+primary (complete case),mean_reframe,-0.216322,0.058669,-0.331612,-0.101033,0.000253
+language excluding coping prompts,earliest_onset,0.018007,0.042551,-0.065611,0.101625,0.672351
+language excluding coping prompts,diagnosis_lag,0.051041,0.054829,-0.056706,0.158787,0.352391
+language excluding coping prompts,symptom_count,0.201118,0.042534,0.117533,0.284704,3e-06
+language excluding coping prompts,mean_reframe,-0.217469,0.055903,-0.327326,-0.107612,0.000115
+excluding left-censored onset,earliest_onset,0.093244,0.052402,-0.009834,0.196322,0.076081
+excluding left-censored onset,diagnosis_lag,0.097513,0.063147,-0.026701,0.221727,0.123477
+excluding left-censored onset,symptom_count,0.240834,0.045545,0.151244,0.330425,0.0
+excluding left-censored onset,mean_reframe,-0.11871,0.069093,-0.25462,0.017201,0.086699
+secondary outcome: negative_behaviors_primary,earliest_onset,0.001948,0.049381,-0.095089,0.098986,0.968543
+secondary outcome: negative_behaviors_primary,diagnosis_lag,0.018981,0.060646,-0.100194,0.138155,0.754442
+secondary outcome: negative_behaviors_primary,symptom_count,0.164194,0.048411,0.069063,0.259325,0.000754
+secondary outcome: negative_behaviors_primary,mean_reframe,-0.243356,0.063956,-0.369033,-0.117679,0.000161
+secondary outcome: thoughts_feelings_primary,earliest_onset,0.033286,0.044228,-0.053624,0.120197,0.452059
+secondary outcome: thoughts_feelings_primary,diagnosis_lag,0.078044,0.05819,-0.036304,0.192393,0.180512
+secondary outcome: thoughts_feelings_primary,symptom_count,0.220552,0.044041,0.134009,0.307096,1e-06
+secondary outcome: thoughts_feelings_primary,mean_reframe,-0.202805,0.061253,-0.323171,-0.082439,0.001002
+secondary outcome: positive_behaviors_primary,earliest_onset,-0.095472,0.053766,-0.201172,0.010228,0.076546
+secondary outcome: positive_behaviors_primary,diagnosis_lag,-0.065127,0.066944,-0.196735,0.066482,0.331219
+secondary outcome: positive_behaviors_primary,symptom_count,-0.07943,0.055185,-0.18792,0.02906,0.150839
+secondary outcome: positive_behaviors_primary,mean_reframe,0.149544,0.070144,0.011645,0.287443,0.033622
